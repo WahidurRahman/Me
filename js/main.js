@@ -56,9 +56,9 @@ $('#main-nav a, .btn').on('click', function(event) {
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 120
+        scrollTop: $(hash).offset().top - 80
       },
-      800
+      600
     );
   }
 });
