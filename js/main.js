@@ -23,7 +23,7 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-
+/*
 // === SCROLL SECTIONS ACTIVE LINK 
 const sectons = document.querySelectorAll('section[id]');
 
@@ -44,6 +44,27 @@ function scrollActive() {
         }
     });
 }
+
+*/
+
+// Smooth Scrolling
+$('#main-nav a, .btn').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 120
+      },
+      800
+    );
+  }
+});
+
+
+
 // ===== SCROLL HEADER 
 window.onscroll = () => {
     const nav = document.getElementById('main-nav');
