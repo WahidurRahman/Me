@@ -23,7 +23,7 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*
+
 // === SCROLL SECTIONS ACTIVE LINK 
 const sectons = document.querySelectorAll('section[id]');
 
@@ -45,7 +45,7 @@ function scrollActive() {
     });
 }
 
-*/
+
 
 // Smooth Scrolling
 $('#main-nav a, .btn').on('click', function(event) {
@@ -58,7 +58,7 @@ $('#main-nav a, .btn').on('click', function(event) {
       {
         scrollTop: $(hash).offset().top - 80
       },
-      600
+      400
     );
   }
 });
